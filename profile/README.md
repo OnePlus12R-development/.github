@@ -6,12 +6,12 @@
 ## Build
 1. Initialise repo with [LineageOS](https://github.com/LineageOS/android) source code.
     ```
-    repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+    repo init -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs --depth=1
     ```
 
 2. Clone [local_manifests](https://github.com/OnePlus12R-development/local_manifests)
     ```
-    git clone https://github.com/OnePlus12R-development/local_manifests -b lineage-21 .repo/local_manifests
+    git clone https://github.com/OnePlus12R-development/local_manifests -b lineage-22.1 .repo/local_manifests
     ```
 
 3. Sync
