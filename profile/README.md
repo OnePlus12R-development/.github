@@ -19,10 +19,17 @@
     repo sync -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
     ```
 
-4. Build
+4. Apply patches required for build
+    ```
+    cd vendor/lineage
+    curl https://github.com/OnePlus12R-development/android_vendor_lineage/commit/4085774f384fea04b2e4e5248ce08e87abbed125.patch | git am
+    cd -
+    ```
+    
+5. Build
     ```
     . build/envsetup.sh
-    lunch lineage_aston-ap2a-userdebug
+    lunch lineage_aston-ap4a-userdebug
     mka bacon
     ```
     Compiling source can take anywhere from 30 mins - 4hrs depending on how powerful your hardware is,
